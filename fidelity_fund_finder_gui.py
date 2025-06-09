@@ -30,8 +30,4 @@ def is_esg(fund_name):
 def is_fy2026_aligned(fund_name):
     keywords = ['clean', 'renewable', 'technology', 'infrastructure', 'semiconductor',
                 'sustainable', 'ai', 'innovation', 'resilience', 'green', 'broadband']
-    return any(kw in fund_name.lower() for kw in keywords)
-
-# --------------------------
-# Streamlit UI
-# ------
+    return any(kw in fund_na_
