@@ -1,35 +1,50 @@
-# fidelity-fund-finder
-A Streamlit app to filter Fidelity funds using live data, ESG, and FY2026 alignment
+import yfinance as yf
+import pandas as pd
+import streamlit as st
 
-# Clone the empty repo you just created
+# Clone your GitHub repo
 git clone https://github.com/KristinWG/fidelity-fund-finder.git
 cd fidelity-fund-finder
 
-# Create folders and add code
+# Create the app folder and enter it
 mkdir app
 cd app
 
-# Save the Streamlit app
+# Create the Streamlit app file
 nano fidelity_fund_finder_gui.py
-# (Paste the script I gave you earlier, then Ctrl+O Enter to save and Ctrl+X to exit)
+# (Paste the full Streamlit script starting with: "import streamlit as st")
+# Save with: Ctrl+O, Enter, then Ctrl+X
 
-# Go back to main folder and add other files
+# Go back to main folder
 cd ..
+
+# Create the requirements.txt file
 nano requirements.txt
-# Paste: streamlit, yfinance, pandas
+# Paste these lines:
+# streamlit
+# yfinance
+# pandas
 
+# Create a .gitignore file
 nano .gitignore
-# Paste: __pycache__/ *.pyc *.pyo .env .DS_Store
+# Paste:
+# __pycache__/
+# *.pyc
+# *.pyo
+# .env
+# .DS_Store
 
+# Optional: Create LICENSE (MIT recommended)
 nano LICENSE
-# Paste in MIT License content (optional but recommended)
+# Paste MIT License text (from https://choosealicense.com/licenses/mit/)
 
-# Update README
+# Update or create a README.md
 nano README.md
-# Paste the README content from earlier
+# Paste:
+# Fidelity Fund Finder
+# A Streamlit app to filter Fidelity funds using live data, ESG, and FY2026 alignment
 
-# Stage and push
+# Stage and push all files to GitHub
 git add .
-git commit -m "Initial commit with Streamlit app"
+git commit -m "Initial commit with working Streamlit app"
 git push origin main
-
